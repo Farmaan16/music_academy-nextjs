@@ -32,10 +32,10 @@ function FeaturedCourses() {
         </div>
       </div>
       <div className="mt-10">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 justify-center">
+        <div className="grid grid-cols-2 gap-6 sm:grid-cols-2 lg:grid-cols-3 justify-center p-2">
           {featuredCourses.map((course: Course) => (
             <div className="flex justify-center" key={course.id}>
-              <BackgroundGradient className="flex flex-col rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900 h-full overflow-hidden">
+              {/* <BackgroundGradient className="flex flex-col rounded-[22px] max-w-sm p-3 sm:p-10 bg-white dark:bg-zinc-900 h-full overflow-hidden">
                 <div className="p-4 sm:p-6 flex flex-col items-center text-center flex-grow">
                   <p className="text-lg sm:text-xl text-black mt-4 mb-2 dark:text-stone-200">
                     {course.title}
@@ -44,6 +44,22 @@ function FeaturedCourses() {
                     {course.description}
                   </p>
                   <Link href={`/Courses/${course.slug}`}>Learn More </Link>
+                </div>
+              </BackgroundGradient> */}
+              <BackgroundGradient className="flex flex-col rounded-[22px] max-w-full p-3 sm:p-6 bg-white dark:bg-zinc-900 h-full overflow-hidden">
+                <div className="p-2 sm:p-4 flex flex-col items-center text-center flex-grow">
+                  <p className="text-xs sm:text-xl text-black mt-2 sm:mt-4 mb-1 sm:mb-2 dark:text-stone-200">
+                    {course.title}
+                  </p>
+                  <p className="text-xs sm:text-sm text-neutral-600 dark:text-stone-400 flex-grow">
+                    {course.description}
+                  </p>
+                  <Link
+                    href={`/Courses/${course.slug}`}
+                    className="text-blue-400 hover:underline text-xs sm:text-sm"
+                  >
+                    Learn More
+                  </Link>
                 </div>
               </BackgroundGradient>
             </div>
@@ -55,7 +71,6 @@ function FeaturedCourses() {
           href="/Courses"
           className="text-stone-300 font-bold uppercase text-xs border border-stone-200 rounded-3xl p-3 hover:bg-neutral-900 hover:text-stone-100 transition duration-200 "
         >
-          {" "}
           view all courses
         </Link>
       </div>

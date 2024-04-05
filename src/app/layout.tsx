@@ -7,7 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Music Academy",
-  description: "NextJS Music Academy  Course Website with TailwindCSS and Typescript  ",
+  description:
+    "NextJS Music Academy  Course Website with TailwindCSS and Typescript  ",
 };
 
 export default function RootLayout({

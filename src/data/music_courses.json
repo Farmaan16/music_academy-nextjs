@@ -99,6 +99,16 @@
       "instructor": "Ethan Moore",
       "isFeatured": true,
       "image": "/courses/blues.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Beat Making Mastery",
+      "slug": "beat-making-mastery",
+      "description": "Master the art of beat making from the ground up, covering everything from drum programming to sample manipulation.",
+      "price": 149.99,
+      "instructor": "Sarah Rodriguez",
+      "isFeatured": true,
+      "image": "/courses/beat-making.jpg"
     }
   ]
 }
