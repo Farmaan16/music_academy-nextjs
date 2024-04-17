@@ -1,5 +1,6 @@
 import FeaturedCourses from "@/components/FeaturedCourses";
 import HeroSection from "@/components/HeroSection";
+import TestimoniaCards from "@/components/TestimoniaCards";
 import WhyChooseUs from "@/components/WhyChooseUs";
 
 export default function Home() {
@@ -7,7 +8,8 @@ export default function Home() {
     <main className="min-h-screen bg-black/[o.96] antialiased bg-grid-white/[0.2]">
       <HeroSection />
       <FeaturedCourses />
-      <WhyChooseUs/>
+      <WhyChooseUs />
+      <TestimoniaCards/>
     </main>
   );
 }

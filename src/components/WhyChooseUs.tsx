@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
 
 const musicSchoolContent = [
@@ -34,12 +34,12 @@ const musicSchoolContent = [
   },
 ];
 
-
 function WhyChooseUs() {
-    return (
-        <div>
-      <StickyScroll content={musicSchoolContent}/>
-  </div>)
+  return (
+    <div className="">
+      <StickyScroll content={musicSchoolContent} />
+    </div>
+  );
 }
 
 export default WhyChooseUs;
