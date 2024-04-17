@@ -68,10 +68,10 @@ function FeaturedCourses() {
       </div>
       <div className="mt-20 text-center">
         <Link
-          href="/Courses"
+          href="/"
           className="text-stone-300 font-bold uppercase text-xs border border-stone-200 rounded-3xl p-3 hover:bg-neutral-900 hover:text-stone-100 transition duration-200 "
         >
-          view all courses
+          View All Courses
         </Link>
       </div>
     </div>
