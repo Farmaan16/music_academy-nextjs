@@ -1,20 +1,19 @@
-'use client'
+"use client";
 
-import Image from "next/image"
+import Image from "next/image";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
 import courseData from "@/data/music_courses.json";
 
-
 interface Course {
-    id: number;
-    title: string;
-    slug: string;
-    description: string;
-    price: number;
-    image: string;
-    instructor: string;
-    isFeatured: boolean;
+  id: number;
+  title: string;
+  slug: string;
+  description: string;
+  price: number;
+  image: string;
+  instructor: string;
+  isFeatured: boolean;
 }
 
 function page() {
@@ -25,7 +24,7 @@ function page() {
       </h1>
 
       <div className="flex flex-wrap justify-center">
-        {courseData.courses.map((course : Course) => (
+        {courseData.courses.map((course: Course) => (
           <CardContainer key={course.id} className="inter-var m-4">
             <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
               <CardItem
@@ -54,8 +53,7 @@ function page() {
                 <CardItem
                   translateZ={20}
                   as={Link}
-                  href="https://twitter.com/mannupaaji"
-                  target="__blank"
+                  href=""
                   className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                 >
                   Try now →
@@ -76,4 +74,4 @@ function page() {
   );
 }
 
-export default page
+export default page;

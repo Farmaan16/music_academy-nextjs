@@ -55,7 +55,7 @@ function FeaturedCourses() {
                     {course.description}
                   </p>
                   <Link
-                    href={`/Courses/${course.slug}`}
+                    href={`/`}
                     className="text-blue-400 hover:underline text-xs sm:text-sm"
                   >
                     Learn More
@@ -68,7 +68,7 @@ function FeaturedCourses() {
       </div>
       <div className="mt-20 text-center">
         <Link
-          href="/"
+          href="/courses"
           className="text-stone-300 font-bold uppercase text-xs border border-stone-200 rounded-3xl p-3 hover:bg-neutral-900 hover:text-stone-100 transition duration-200 "
         >
           View All Courses

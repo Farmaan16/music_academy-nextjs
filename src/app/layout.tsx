@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Music Academy",
   description:
     "NextJS Music Academy  Course Website with TailwindCSS and Typescript  ",
+  icons: {
+    icon: "/favicon.png"
+  }
 };
 
 export default function RootLayout({
